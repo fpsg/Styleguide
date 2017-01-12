@@ -44,7 +44,7 @@
         <p>We want to offer a consistent foodpanda experience across all platforms, not necessarily have everything look the same, but at least have the experience be similar. Consistency also refers to within the platforms themselves; to use the same colors, behavior and logif for the same elements.</p><br>
         <hr>
         <h4>Special Snowflakes</h4>
-        <p>As much as we want everything to be uniform and conform strictly to the system we are creating, there will always be elements that will deviate from the norm. These are referred to as "Special snowflakes". Because we know it will happen, it is stupid not to prepare for this scenario.</p><p> In cases we encounter where there's a need for a special snowflake, they must be documented and a reason to why they're special snowflakes must be given in the documentation. Because things change over time and if we know why we did something, we also know when we can melt the snowflake and unify CSS-styles later down the line.</p><hr><br>
+        <p>As much as we want everything to be uniform and conform strictly to the system we are creating, there will always be elements that will deviate from the norm. These are referred to as "Special snowflakes". Because we know it will happen, we should be prepared for this scenario.</p><p> In cases we encounter where there's a need for a special snowflake, they must be documented and a reason to why they're special snowflakes must be given in the documentation. Because things change over time and if we know why we did something, we also know when we can melt the snowflake and unify CSS-styles later down the line.</p><hr><br>
 
       <!-- Font section -->
         <div id="fonts">
@@ -210,6 +210,11 @@
           <div id="greyscale">
             <h4 class="f-heading">Greyscale</h4>
             <p>These colors are generally used for texts and backgrounds.</p>
+            <p>A quick note on color accessibility:<br>To make our site as accessible as possible, we comply with the <a href="https://www.w3.org/TR/WCAG20/#visual-audio-contrast">WCAG accessibility guidelines on color contrast</a>. This basically comes down to these simple guidelines:</p><p>Darker text on lighter background:<br>
+            When using @color-white to @color-mystic as background color, use @color-shuttle or darker for text color.<br>When using @color-silver or @color-aluminum as background color, use @color-mirage or darker for text color.</p><p>
+            Lighter text on darker background:<br>
+            When using @color-shuttle as background color, use @color-mystic or brighter for text color.<br>
+            When using @color-mirage or darker as background color, use @color-silver or brighter for text color.</p>
             <hr>
 
             <div class="row">
@@ -224,7 +229,7 @@
 
             <div class="row">
               <div class="col-lg-6">
-                <p>@color-grey-1</p>
+                <p>@color-porcelain</p>
               </div>
               <div class="col-lg-6" style="border-color:#FAFAFA">
                 <div class="crect" style="background-color:#FAFAFA;"></div>
@@ -234,7 +239,7 @@
 
             <div class="row">
               <div class="col-lg-6">
-                <p>@color-grey-2</p>
+                <p>@color-concrete</p>
               </div>
               <div class="col-lg-6" style="border-color:#F3F4F5">
                 <div class="crect" style="background-color:#F3F4F5;"></div>
@@ -245,7 +250,7 @@
 
             <div class="row">
               <div class="col-lg-6">
-                <p>@color-grey-3</p>
+                <p>@color-mystic</p>
               </div>
               <div class="col-lg-6" style="border-color:#E9EBEE">
                 <div class="crect" style="background-color:#E9EBEE;"></div>
@@ -255,7 +260,7 @@
 
             <div class="row">
               <div class="col-lg-6">
-                <p>@color-grey-4</p>
+                <p>@color-iron</p>
               </div>
               <div class="col-lg-6" style="border-color:#DADEE1">
                 <div class="crect" style="background-color:#DADEE1;"></div>
@@ -265,7 +270,7 @@
 
             <div class="row">
               <div class="col-lg-6">
-                <p>@color-grey-5</p>
+                <p>@color-silver</p>
               </div>
               <div class="col-lg-6" style="border-color:#B3B9BD">
                 <div class="crect" style="background-color:#B3B9BD;"></div>
@@ -275,7 +280,7 @@
 
             <div class="row">
               <div class="col-lg-6">
-                <p>@color-grey-6</p>
+                <p>@color-aluminum</p>
               </div>
               <div class="col-lg-6" style="border-color:#959A9E">
                 <div class="crect" style="background-color:#959A9E;"></div>
@@ -285,7 +290,7 @@
 
             <div class="row">
               <div class="col-lg-6">
-                <p>@color-grey-7</p>
+                <p>@color-stone</p>
               </div>
               <div class="col-lg-6" style="border-color:#676F75">
                 <div class="crect" style="background-color:#676F75;"></div>
@@ -295,7 +300,7 @@
 
             <div class="row">
               <div class="col-lg-6">
-                <p>@color-grey-8</p>
+                <p>@color-shuttle/p>
               </div>
               <div class="col-lg-6" style="border-color:#444F59">
                 <div class="crect" style="background-color:#444F59;"></div>
@@ -305,7 +310,7 @@
 
             <div class="row">
               <div class="col-lg-6">
-                <p>@color-grey-9</p>
+                <p>@color-mirage</p>
               </div>
               <div class="col-lg-6" style="border-color:#1C2C3A">
                 <div class="crect" style="background-color:#1C2C3A;"></div>
@@ -315,7 +320,7 @@
 
             <div class="row">
               <div class="col-lg-6">
-                <p>@color-grey-10</p>
+                <p>@color-charcoal</p>
               </div>
               <div class="col-lg-6" style="border-color:#0C1319">
                 <div class="crect" style="background-color:#0C1319;"></div>
@@ -325,7 +330,7 @@
 
             <div class="row">
               <div class="col-lg-6">
-                <p>@color-grey-11</p>
+                <p>@color-black</p>
               </div>
               <div class="col-lg-6" style="border-color:#04070A">
                 <div class="crect" style="background-color:#04070A;"></div>
