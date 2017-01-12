@@ -9,6 +9,7 @@
 
     <!-- Bootstrap -->
     <link href="bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -18,9 +19,504 @@
     <![endif]-->
   </head>
   <body>
-    <h1>Testing Styleguide</h1>
-    <p>Look at me, I'm a p tag!</p>
+  <div class="container">
 
+
+  <div class="col-lg-2">
+        <ul class="side-nav default-side-nav">
+          <li><a class="here" href="guidelines.htm">Guidelines</a></li>
+          <li><a href="components.htm">Components</a></li>
+          <li><a href="resources.htm">Resources</a></li>
+          <li><a style="color:#ddd;" href="#">FAQ</a></li>
+        </ul>
+      </div>
+
+      <div class="col-lg-8">
+        <h1>Guidelines</h1>
+        <p>We strive to follow four guiding principles, they are: Clarity, Accessibility, Efficiency and Consistency.</p><br><br>
+        <h4>Clarity</h4>
+        <p>Clarity is number one, if a user doesn't know what a page does, how to proceed in a flow or what's wrong when we give an error state it is our problem to solve. Given how much cognitive load from the rest of the world (TV, internet, billboards, family, friends etc) our customers have, our first priority is to be as clear as possible.</p><br>
+        <h4>Accessibility</h4>
+        <p>Our products reach many different people in different locations and situations. We need to think about everyone, from people with 100+ MB connections to dial-up modems, techies to non-techies, perfectly healthy people with the newest iPhone to people with and disabilities and old phones, and design something that makes an effort to work for everyone.</p><br>
+        <h4>Efficiency</h4>
+        <p>With limited time and abundant choice for the customer, we have to strive to make the interface as efficient as possible. Too many steps in a process can lead to someone leaving our app, so we have to do what we can to make the interface work as efficiently as possibly.</p><br>
+        <h4>Consistency</h4>
+        <p>We want to offer a consistent foodpanda experience across all platforms, not necessarily have everything look the same, but at least have the experience be similar. Consistency also refers to within the platforms themselves; to use the same colors, behavior and logif for the same elements.</p><br>
+        <hr>
+        <h4>Special Snowflakes</h4>
+        <p>As much as we want everything to be uniform and conform strictly to the system we are creating, there will always be elements that will deviate from the norm. These are referred to as "Special snowflakes". Because we know it will happen, it is stupid not to prepare for this scenario.</p><p> In cases we encounter where there's a need for a special snowflake, they must be documented and a reason to why they're special snowflakes must be given in the documentation. Because things change over time and if we know why we did something, we also know when we can melt the snowflake and unify CSS-styles later down the line.</p><hr><br>
+
+      <!-- Font section -->
+        <div id="fonts">
+          <h4 class="f-heading">Fonts</h4>
+          <p>Use these classes to change the weight of our font.</p>
+          <hr>
+          <div class="row">
+              <div class="col-lg-6">
+                <p>@font-family</p>
+              </div>
+              <div class="col-lg-6" style="border-color:#EA5B31">
+                <div><p>'Open Sans, sans-serif'</p></div>
+              </div>
+          </div>
+
+          <div class="row">
+              <div class="col-lg-6">
+                <p>@font-weight-light</p>
+              </div>
+              <div class="col-lg-6" style="border-color:#EA5B31">
+                <div><p style="font-weight:300;">foodpanda<br>300</p></div>
+              </div>
+          </div>
+
+          <div class="row">
+              <div class="col-lg-6">
+                <p>@font-weight-regular</p>
+              </div>
+              <div class="col-lg-6" style="border-color:#EA5B31">
+                <div><p style="font-weight:400;">foodpanda<br>400</p></div>
+              </div>
+          </div>
+
+          <div class="row">
+              <div class="col-lg-6">
+                <p>@font-weight-bold</p>
+              </div>
+              <div class="col-lg-6" style="border-color:#EA5B31">
+                <div><p style="font-weight:700;">foodpanda<br>700</p></div>
+              </div>
+          </div>
+        </div>
+
+        <div id="fontsizes">
+          <h4 class="f-heading">Font Sizes</h4>
+          <p>Use these classes to change the size of our font. It is recommended to stick with font-m for paragraphs, font-l for text that needs emphasis but is not a heading, font-xl and up for headings and font-s and smaller for legal text or text we don't want to put any emphasis on.</p>
+          <hr>
+          <div class="row">
+              <div class="col-lg-6">
+                <p>@font-xs</p>
+              </div>
+              <div class="col-lg-6" style="border-color:#EA5B31">
+                <div><p style="font-size:10px; line-height: 16px;">foodpanda<br>10px</p></div>
+              </div>
+          </div>
+
+          <div class="row">
+              <div class="col-lg-6">
+                <p>@font-s</p>
+              </div>
+              <div class="col-lg-6" style="border-color:#EA5B31">
+                <div><p style="font-size:12px; line-height: 16px;">foodpanda<br>12px</p></div>
+              </div>
+          </div>
+
+          <div class="row">
+              <div class="col-lg-6">
+                <p>@font-m</p>
+              </div>
+              <div class="col-lg-6" style="border-color:#EA5B31">
+                <div><p style="font-size:14px; line-height: 18px;">foodpanda<br>14px</p></div>
+              </div>
+          </div>
+
+          <div class="row">
+              <div class="col-lg-6">
+                <p>@font-l</p>
+              </div>
+              <div class="col-lg-6" style="border-color:#EA5B31">
+                <div><p style="font-size:18px; line-height: 22px;">foodpanda<br>18px</p></div>
+              </div>
+          </div>
+
+          <div class="row">
+              <div class="col-lg-6">
+                <p>@font-xl</p>
+              </div>
+              <div class="col-lg-6" style="border-color:#EA5B31">
+                <div><p style="font-size:24px; line-height: 30px;">foodpanda<br>24px</p></div>
+              </div>
+          </div>
+
+          <div class="row">
+              <div class="col-lg-6">
+                <p>@font-xxl</p>
+              </div>
+              <div class="col-lg-6" style="border-color:#EA5B31">
+                <div><p style="font-size:30px; line-height: 36px;">foodpanda<br>30px</p></div>
+              </div>
+          </div>
+
+          <div class="row">
+              <div class="col-lg-6">
+                <p>@font-xxxl</p>
+              </div>
+              <div class="col-lg-6" style="border-color:#EA5B31">
+                <div><p style="font-size:36px; line-height: 42px;">foodpanda<br>36px</p></div>
+              </div>
+          </div>
+
+
+        </div>
+
+
+        <!-- Color section -->
+        <!-- Color div -->
+          <div id="brandcolors">
+            <h4 class="f-heading">Brand colors</h4>
+            <p>These are our four most important colors, and they are our strongest brand asset. We generally use <code>@color-green</code> for elements you can interact with, <code>@color-deep-blue</code> and shades of it for text colors, <code>@color-express-blue</code> for any communication related to foodpanda express and <code>@color-orange</code> for branding purposes.</p>
+            <hr>
+            <div class="row">
+              <div class="col-lg-6">
+                <p>@color-orange</p>
+              </div>
+              <div class="col-lg-6" style="border-color:#EA5B31">
+                <div class="crect" style="background-color:#EA5B31;"></div>
+                <div><p>#EA5B31</p></div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-lg-6">
+                <p>@color-green</p>
+              </div>
+              <div class="col-lg-6" style="border-color:#20AC76">
+                <div class="crect" style="background-color:#20AC76;"></div>
+                <div><p>#20AC76</p></div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-lg-6">
+                <p>@color-deep-blue</p>
+              </div>
+              <div class="col-lg-6" style="border-color:#1C2C3A">
+                <div class="crect" style="background-color:#1C2C3A;"></div>
+                <div><p>#1C2C3A</p></div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-lg-6">
+                <p>@color-express-blue</p>
+              </div>
+              <div class="col-lg-6" style="border-color:#2F86AC">
+                <div class="crect" style="background-color:#2F86AC;"></div>
+                <div><p>#2F86AC</p></div>
+              </div>
+            </div>
+
+          </div>
+
+          <div id="greyscale">
+            <h4 class="f-heading">Greyscale</h4>
+            <p>These colors are generally used for texts and backgrounds.</p>
+            <hr>
+
+            <div class="row">
+              <div class="col-lg-6">
+                <p>@color-white</p>
+              </div>
+              <div class="col-lg-6" style="border-color:#FFF">
+                <div class="crect" style="background-color:#FFF;"></div>
+                <div><p>#FFF</p></div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-lg-6">
+                <p>@color-grey-1</p>
+              </div>
+              <div class="col-lg-6" style="border-color:#FAFAFA">
+                <div class="crect" style="background-color:#FAFAFA;"></div>
+                <div><p>#FAFAFA</p></div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-lg-6">
+                <p>@color-grey-2</p>
+              </div>
+              <div class="col-lg-6" style="border-color:#F3F4F5">
+                <div class="crect" style="background-color:#F3F4F5;"></div>
+                <div><p>#F3F4F5</p></div>
+              </div>
+            </div>
+
+
+            <div class="row">
+              <div class="col-lg-6">
+                <p>@color-grey-3</p>
+              </div>
+              <div class="col-lg-6" style="border-color:#E9EBEE">
+                <div class="crect" style="background-color:#E9EBEE;"></div>
+                <div><p>#E9EBEE</p></div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-lg-6">
+                <p>@color-grey-4</p>
+              </div>
+              <div class="col-lg-6" style="border-color:#DADEE1">
+                <div class="crect" style="background-color:#DADEE1;"></div>
+                <div><p>#DADEE1</p></div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-lg-6">
+                <p>@color-grey-5</p>
+              </div>
+              <div class="col-lg-6" style="border-color:#B3B9BD">
+                <div class="crect" style="background-color:#B3B9BD;"></div>
+                <div><p>#B3B9BD</p></div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-lg-6">
+                <p>@color-grey-6</p>
+              </div>
+              <div class="col-lg-6" style="border-color:#959A9E">
+                <div class="crect" style="background-color:#959A9E;"></div>
+                <div><p>#959A9E</p></div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-lg-6">
+                <p>@color-grey-7</p>
+              </div>
+              <div class="col-lg-6" style="border-color:#676F75">
+                <div class="crect" style="background-color:#676F75;"></div>
+                <div><p>#676F75</p></div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-lg-6">
+                <p>@color-grey-8</p>
+              </div>
+              <div class="col-lg-6" style="border-color:#444F59">
+                <div class="crect" style="background-color:#444F59;"></div>
+                <div><p>#444F59</p></div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-lg-6">
+                <p>@color-grey-9</p>
+              </div>
+              <div class="col-lg-6" style="border-color:#1C2C3A">
+                <div class="crect" style="background-color:#1C2C3A;"></div>
+                <div><p>#1C2C3A</p></div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-lg-6">
+                <p>@color-grey-10</p>
+              </div>
+              <div class="col-lg-6" style="border-color:#0C1319">
+                <div class="crect" style="background-color:#0C1319;"></div>
+                <div><p>#0C1319</p></div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-lg-6">
+                <p>@color-grey-11</p>
+              </div>
+              <div class="col-lg-6" style="border-color:#04070A">
+                <div class="crect" style="background-color:#04070A;"></div>
+                <div><p>#04070A</p></div>
+              </div>
+            </div>
+          </div>
+
+            <!-- Variation div -->
+            <div id="variations">
+              <h4 class="f-heading">Variations of foodpanda orange</h4>
+                <p>These are variations of foodpanda orange</p>
+              <hr>
+
+              <div class="row">
+                <div class="col-lg-6">
+                  <p>@color-orange-lightest</p>
+                </div>
+                <div class="col-lg-6" style="border-color:#F4AD98">
+                  <div class="crect" style="background-color:#F4AD98;"></div>
+                  <div><p>#F4AD98</p></div>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-lg-6">
+                  <p>@color-orange-lighter</p>
+                </div>
+                <div class="col-lg-6" style="border-color:#ED7450">
+                  <div class="crect" style="background-color:#ED7450;"></div>
+                  <div><p>#ED7450</p></div>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-lg-6">
+                  <p>@color-orange</p>
+                </div>
+                <div class="col-lg-6" style="border-color:#EA5B31">
+                  <div class="crect" style="background-color:#EA5B31;"></div>
+                  <div><p>#EA5B31</p></div>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-lg-6">
+                  <p>@color-orange-darker</p>
+                </div>
+                <div class="col-lg-6" style="border-color:#B64726">
+                  <div class="crect" style="background-color:#B64726;"></div>
+                  <div><p>#B64726</p></div>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-lg-6">
+                  <p>@color-orange-darkest</p>
+                </div>
+                <div class="col-lg-6" style="border-color:#752D18">
+                  <div class="crect" style="background-color:#752D18;"></div>
+                  <div><p>#752D18</p></div>
+                </div>
+              </div>
+            </div>
+            <!-- End of variation div -->
+
+            <!-- Variation div -->
+            <div>
+              <h4 class="f-heading">Variations of foodpanda green</h4>
+                <p>These are variations of foodpanda green</p>
+              <hr>
+
+              <div class="row">
+                <div class="col-lg-6">
+                  <p>@color-green-lightest</p>
+                </div>
+                <div class="col-lg-6" style="border-color:#8FD5BA">
+                  <div class="crect" style="background-color:#8FD5BA;"></div>
+                  <div><p>#8FD5BA</p></div>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-lg-6">
+                  <p>@color-green-lighter</p>
+                </div>
+                <div class="col-lg-6" style="border-color:#4CBC91">
+                  <div class="crect" style="background-color:#4CBC91;"></div>
+                  <div><p>#4CBC91</p></div>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-lg-6">
+                  <p>@color-green</p>
+                </div>
+                <div class="col-lg-6" style="border-color:#20AC76">
+                  <div class="crect" style="background-color:#20AC76;"></div>
+                  <div><p>#20AC76</p></div>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-lg-6">
+                  <p>@color-green-darker</p>
+                </div>
+                <div class="col-lg-6" style="border-color:#178058">
+                  <div class="crect" style="background-color:#178058;"></div>
+                  <div><p>#178058</p></div>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-lg-6">
+                  <p>@color-green-darkest</p>
+                </div>
+                <div class="col-lg-6" style="border-color:#0E4D35">
+                  <div class="crect" style="background-color:#0E4D35;"></div>
+                  <div><p>#0E4D35</p></div>
+                </div>
+              </div>
+            </div>
+            <!-- End of variation div -->
+
+            <!-- Variation div -->
+            <div>
+              <h4 class="f-heading">Variations of foodpanda express blue</h4>
+                <p>These are variations of foodpanda express blue</p>
+              <hr>
+
+              <div class="row">
+                <div class="col-lg-6">
+                  <p>@color-express-blue-lightest</p>
+                </div>
+                <div class="col-lg-6" style="border-color:#A1C8D9">
+                  <div class="crect" style="background-color:#A1C8D9;"></div>
+                  <div><p>#A1C8D9</p></div>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-lg-6">
+                  <p>@color-express-blue-lighter</p>
+                </div>
+                <div class="col-lg-6" style="border-color:#589EBC">
+                  <div class="crect" style="background-color:#589EBC;"></div>
+                  <div><p>#589EBC</p></div>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-lg-6">
+                  <p>@color-express-blue</p>
+                </div>
+                <div class="col-lg-6" style="border-color:#2F86AC">
+                  <div class="crect" style="background-color:#2F86AC;"></div>
+                  <div><p>#2F86AC</p></div>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-lg-6">
+                  <p>@color-express-blue-darker</p>
+                </div>
+                <div class="col-lg-6" style="border-color:#236480">
+                  <div class="crect" style="background-color:#236480;"></div>
+                  <div><p>#236480</p></div>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-lg-6">
+                  <p>@color-express-blue-darkest</p>
+                </div>
+                <div class="col-lg-6" style="border-color:#174255">
+                  <div class="crect" style="background-color:#174255;"></div>
+                  <div><p>#174255</p></div>
+                </div>
+              </div>
+            </div>
+            <!-- End of variation div -->
+          </div> <!-- End of color div -->
+
+            
+
+
+
+      <!-- Footer -->
+      <div class="col-lg-12"><footer style="text-align:right;"><p><small>Version 0.1 of foodpanda Design System.</small></p></footer></div>
+
+  </div> <!-- Close main div -->
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
