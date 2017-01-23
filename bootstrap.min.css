@@ -18,3 +18,248 @@ body{
 ul.side-nav{
 	list-style-type: none;
 }
+
+.btn-primary{
+	background-color:#20ac76;
+	border-color:#20ac76;
+}
+
+div.col-sm-3 p span{
+	min-height:40px;
+	display:inline-block;
+	padding: 9px 16px;
+	border-radius:3px;
+	border:1px solid;
+	letter-spacing: 0.05em;
+}
+
+.btn.btn-primary{
+	background-color: #20ac76;
+	color: #fff;
+	border-color: #20ac76;
+	padding: 9px 16px;
+	border-radius:3px;
+	border:1px solid;
+	letter-spacing: 0.05em;
+	min-height:40px;
+	transition:all 0.2s ease-out;
+}
+
+.btn.btn-primary:hover{
+	background-color: #178058;
+	color: #8FD5BA;
+	border-color: #178058;
+	box-shadow:0px 4px 8px #676F75;
+}
+
+.btn.btn-primary:active{
+	background-color: #0E4D35;
+	color: #178058;
+	border-color: #0E4D35;
+}
+
+span#btn-primary-normal{
+	background-color: #20ac76;
+	color: #fff;
+	border-color: #20ac76;
+}
+
+span#btn-primary-hover{
+	background-color: #178058;
+	color: #8FD5BA;
+	border-color: #178058;
+	box-shadow:0px 4px 8px #676F75;
+}
+
+span#btn-primary-active{
+	background-color: #0E4D35;
+	color: #178058;
+	border-color: #0E4D35;
+}
+
+span#btn-primary-disabled{
+	background-color: #B3B9BD;
+	color: #fff;
+	border-color: #B3B9BD;
+}
+
+
+
+.btn.btn-secondary{
+	background-color: #fff;
+	color: #20ac76;
+	border-color: #20ac76;
+	padding: 9px 16px;
+	border-radius:3px;
+	border:1px solid;
+	letter-spacing: 0.05em;
+	min-height:40px;
+	transition:all 0.2s ease-out;
+}
+
+.btn.btn-secondary:hover{
+	background-color: #fff;
+	color: #178058;
+	border-color: #178058;
+	box-shadow:0px 4px 8px #B3B9BD;
+}
+
+.btn.btn-secondary:active{
+	background-color: #DADEE1;
+	color: #0E4D35;
+	border-color: #0E4D35;
+}
+
+span#btn-secondary-normal{
+	background-color: #fff;
+	color: #20ac76;
+	border-color: #20ac76;
+}
+
+span#btn-secondary-hover{
+	background-color: #fff;
+	color: #178058;
+	border-color: #178058;
+	box-shadow:0px 4px 8px #B3B9BD;
+}
+
+span#btn-secondary-active{
+	background-color: #DADEE1;
+	color: #0E4D35;
+	border-color: #0E4D35;
+}
+
+span#btn-secondary-disabled{
+	background-color: #fff;
+	color: #959A9E;
+	border-color: #959A9E;
+}
+
+
+.btn.btn-tertiary{
+	background-color: #fff;
+	color: #20ac76;
+	border: none;
+	margin: 9px 16px;
+	letter-spacing: 0.05em;
+	transition:all 0.2s ease-out;
+}
+
+.btn.btn-tertiary:hover{
+	background-color: #fff;
+	color: #0E4D35;
+	border: none;
+	/* box-shadow:0px 4px 8px #B3B9BD; */
+}
+
+.btn.btn-tertiary:active{
+	background-color: #fff;
+	color: #8FD5BA;
+	border: none;
+}
+
+span#btn-tertiary-normal{
+	background-color: #fff;
+	color: #4CBC91;
+	border: none;
+}
+
+span#btn-tertiary-hover{
+	background-color: #fff;
+	color: #0E4D35;
+	border: none;
+	/* box-shadow:0px 4px 8px #B3B9BD; */
+}
+
+span#btn-tertiary-active{
+	background-color: #fff;
+	color: #8FD5BA;
+	border: none;
+}
+
+span#btn-tertiary-disabled{
+	background-color: #fff;
+	color: #959A9E;
+	border: none;
+}
+
+/* Delete buttons */
+
+span#btn-primary-delete-normal{
+	background-color: #FF0000;
+	color: #fff;
+	border-color: #FF0000;
+}
+
+span#btn-primary-delete-hover{
+	background-color: #D80000;
+	color: #F3F4F5;
+	border-color: #D80000;
+	box-shadow:0px 4px 8px #676F75;
+}
+
+span#btn-primary-delete-active{
+	background-color: #7F0000;
+	color: #959A9E;
+	border-color: #7F0000;
+}
+
+span#btn-primary-delete-disabled{
+	background-color: #959A9E;
+	color: #fff;
+	border-color: #959A9E;
+}
+
+span#btn-secondary-delete-normal{
+	background-color: #fff;
+	color: #FF0000;
+	border-color: #FF0000;
+}
+
+span#btn-secondary-delete-hover{
+	background-color: #fff;
+	color: #D80000;
+	border-color: #D80000;
+	box-shadow:0px 4px 8px #B3B9BD;
+}
+
+span#btn-secondary-delete-active{
+	background-color: #DADEE1;
+	color: #7F0000;
+	border-color: #7F0000;
+}
+
+span#btn-secondary-delete-disabled{
+	background-color: #fff;
+	color: #959A9E;
+	border-color: #959A9E;
+}
+
+span#btn-tertiary-delete-normal{
+	background-color: #fff;
+	color: #FF0000;
+	border: none;
+}
+
+span#btn-tertiary-delete-hover{
+	background-color: #fff;
+	color: #7F0000;
+	border: none;
+	/* box-shadow:0px 4px 8px #B3B9BD; */
+}
+
+span#btn-tertiary-delete-active{
+	background-color: #fff;
+	color: #FF9999;
+	border: none;
+}
+
+span#btn-tertiary-delete-disabled{
+	background-color: #fff;
+	color: #959A9E;
+	border: none;
+}
+
+.f-heading{
+	margin-top:80px;
+}

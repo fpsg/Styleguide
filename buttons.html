@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>foodpanda styleguide</title>
+
+    <!-- Bootstrap -->
+    <link href="bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+  <div class="container">
+
+
+    <div class="col-md-2">
+        <ul class="side-nav default-side-nav">
+          <li><a class="here" href="index.html">Start</a></li>
+          <li><a href="colors.html">Colors</a></li>
+          <li><a href="fonts.html">Typography</a></li>
+          <li><a href="buttons.html">Buttons</a></li>
+        </ul>
+      </div>
+
+      <div class="col-md-8">
+
+      <!-- Font section -->
+        <div id="buttons">
+          <h4>Buttons</h4>
+          <p>Buttons are one of the most important elements on a website. If implemented correctly, buttons help us reach our business goals and the user reach their goals.</p>
+          <hr>
+        </div>
+
+        <div id="fontsizes">
+          <h4 class="f-heading">Primary Buttons</h4>
+          <p>Primary buttons are reserved for the main interaction for a page. There can’t be more than one primary button per page, because there are not ever more than one primary action per page. In the checkout flow, proceeding to the next page is the primary (desired) action, therefore that button is the primary button. In the account section, the main action is for the user to save his/her changes, therefore the Save button becomes the primary button. Actions such as “next”, “continue”, “save” and “confirm” are essentially always primary actions, and should be primary buttons.</p>
+          <hr>
+          <div class="row">
+              <div class="col-sm-3">
+                <p><span id="btn-primary-normal">Normal</span></p>
+              </div>
+
+              <div class="col-sm-3">
+                <p><span id="btn-primary-hover">Hover</span></p>
+              </div>
+
+              <div class="col-sm-3">
+                <p><span id="btn-primary-active">Active</span></p>
+              </div>
+
+              <div class="col-sm-3">
+                <p><span id="btn-primary-disabled">Disabled</span></p>
+              </div>
+          </div>
+          <div class="row" style="margin-top:40px;">
+            <div class="col-sm-3"><p>Example</p></div>
+            <div class="col-sm-9"><button class="btn btn-primary">Example</button></div>
+          </div>
+
+          <div id="fontsizes">
+          <h4 class="f-heading">Secondary Buttons</h4>
+          <p>A secondary button is used together with a primary one. The reason to why it’s a secondary button and not a second or third primary one, is because it’s less important than the primary button, but it still relates to the hierarchy somehow. If there’s a primary button in the layout, all other buttons become secondary (or tertiary). No matter if they are right next to the primary button on the page or far away from it.</p>
+          <hr>
+          <div class="row">
+              <div class="col-sm-3">
+                <p><span id="btn-secondary-normal">Normal</span></p>
+              </div>
+
+              <div class="col-sm-3">
+                <p><span id="btn-secondary-hover">Hover</span></p>
+              </div>
+
+              <div class="col-sm-3">
+                <p><span id="btn-secondary-active">Active</span></p>
+              </div>
+
+              <div class="col-sm-3">
+                <p><span id="btn-secondary-disabled">Disabled</span></p>
+              </div>
+              </div>
+              <div class="row" style="margin-top:40px;">
+            <div class="col-sm-3"><p>Example</p></div>
+            <div class="col-sm-9"><button class="btn btn-secondary">Example</button></div>
+          
+          </div>
+
+          <div id="fontsizes">
+          <h4 class="f-heading">Tertiary Buttons (Name change will come)</h4>
+          <p>Tertiary buttons are for actions which don’t fit into a priority order. While sending an email is the primary action for an email editor, changing font color and size doesn’t have any priority but are still offered to the user. Liking and commenting on facebook is also a good example of actions where one is not prioritized against the other.</p>
+          <hr>
+              <div class="row">
+                <div class="col-sm-3">
+                  <p><span id="btn-tertiary-normal">Normal</span></p>
+                </div>
+
+                <div class="col-sm-3">
+                  <p><span id="btn-tertiary-hover">Hover</span></p>
+                </div>
+
+                <div class="col-sm-3">
+                  <p><span id="btn-tertiary-active">Active</span></p>
+                </div>
+
+                <div class="col-sm-3">
+                  <p><span id="btn-tertiary-disabled">Disabled</span></p>
+                </div>
+              </div>
+            <div class="row" style="margin-top:40px;">
+              <div class="col-sm-3"><p>Example</p></div>
+              <div class="col-sm-9"><button class="btn btn-tertiary">Example</button>
+              </div>
+            </div>
+
+          <div id="fontsizes">
+            <h4 class="f-heading">Microcopy/button text</h4>
+            <p>In order to make the buttons as effective as possible, please write with a clear language and intent. Short phrases or single words, especially with verbs, help make the result of the action clear. “Delete Item” and “Sign Up” are two good examples, while “Confirm Action” and “Get it Now” are examples of bad ones.</p>
+            <hr>
+          </div>
+
+
+          <div id="fontsizes">
+          <h4 class="f-heading">Delete Buttons</h4>
+          <p>Delete buttons, called so because they’re used to “delete” things, are essentially the primary/secondary/tertiary buttons with red instead of green. The actions performed with delete buttons are always destructive and maybe most importantly, not undoable. Even though you may display a warning/confirmation, for example after pressing the delete button there might be a popup asking the user to confirm the action, the action that you initiate with the delete button is always something destructive and non-undoable.</p>
+          <hr>
+          <div class="row">
+              <div class="col-sm-3">
+                <p><span id="btn-primary-delete-normal">Normal</span></p>
+              </div>
+
+              <div class="col-sm-3">
+                <p><span id="btn-primary-delete-hover">Hover</span></p>
+              </div>
+
+              <div class="col-sm-3">
+                <p><span id="btn-primary-delete-active">Active</span></p>
+              </div>
+
+              <div class="col-sm-3">
+                <p><span id="btn-primary-delete-disabled">Disabled</span></p>
+              </div>
+          </div>
+
+           <div class="row">
+              <div class="col-sm-3">
+                <p><span id="btn-secondary-delete-normal">Normal</span></p>
+              </div>
+
+              <div class="col-sm-3">
+                <p><span id="btn-secondary-delete-hover">Hover</span></p>
+              </div>
+
+              <div class="col-sm-3">
+                <p><span id="btn-secondary-delete-active">Active</span></p>
+              </div>
+
+              <div class="col-sm-3">
+                <p><span id="btn-secondary-delete-disabled">Disabled</span></p>
+              </div>
+          </div>
+           <div class="row">
+              <div class="col-sm-3">
+                <p><span id="btn-tertiary-delete-normal">Normal</span></p>
+              </div>
+
+              <div class="col-sm-3">
+                <p><span id="btn-tertiary-delete-hover">Hover</span></p>
+              </div>
+
+              <div class="col-sm-3">
+                <p><span id="btn-tertiary-delete-active">Active</span></p>
+              </div>
+
+              <div class="col-sm-3">
+                <p><span id="btn-tertiary-delete-disabled">Disabled</span></p>
+              </div>
+            </div>
+
+          <div id="fontsizes">
+            <h4 class="f-heading">Combining Buttons</h4>
+            <p>Only use one primary button per page, if you need to use it multiple times then the hierarchy isn’t clear enough on the page and the page probably has other problems that are not directly relatable to the button hierarchy.
+If you have buttons that are standing together with the primary button, they immediately become secondary buttons. It’s fine to mix two different hierarchies with each other, such as primariy with secondary, secondary with tertiary, and primary with tertiary, but not to use all three levels at once.</p>
+            <hr>
+          <div class="row">
+            <div class="col-sm-12"><p>Insert example here</p></div>
+          </div>
+
+          <div id="fontsizes">
+            <h4 class="f-heading">Responsive Buttons</h4>
+            <p>For some buttons on mobile web, it makes sense that they occupy the full width of the container. For these buttons, think about how the buttons will resize on mobile screens, make sure that the primary button is still the strongest one in the layout.</p>
+            <hr>
+                          <div class="row">
+            <div class="col-sm-12"><p>Insert example here</p></div>
+          </div>
+          </div>
+
+          <div id="fontsizes">
+          <h4 class="f-heading">Special Buttons</h4>
+          <p>Add intro text about special buttons.</p>
+          <hr>
+          <div class="row">
+              <div class="col-md-6">
+                <p>@font-xs</p>
+              </div>
+              <div class="col-md-6" style="border-color:#EA5B31">
+                <div><p style="font-size:10px; line-height: 16px;">foodpanda<br>10px</p></div>
+              </div>
+          </div>
+
+        </div>
+
+      <!-- Footer -->
+      <div class="col-md-12"><footer style="text-align:right;"><p><small>Version 0.1 of foodpanda Design System.</small></p></footer></div>
+
+  </div> <!-- Close main div -->
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
