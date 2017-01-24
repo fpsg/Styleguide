@@ -263,3 +263,8 @@ span#btn-tertiary-delete-disabled{
 .f-heading{
 	margin-top:80px;
 }
+
+.row .row p {
+	margin-bottom:5px;
+	margin-top:5px;
+}

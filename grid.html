@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>foodpanda styleguide</title>
+
+    <!-- Bootstrap -->
+    <link href="bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+  <div class="container">
+
+
+    <div class="col-md-2">
+        <ul class="side-nav default-side-nav">
+          <li><a class="here" href="index.html">Start</a></li>
+          <li><a href="grid.html">Grid</a></li>
+          <li><a href="colors.html">Colors</a></li>
+          <li><a href="fonts.html">Typography</a></li>
+          <li><a href="buttons.html">Buttons</a></li>
+        </ul>
+      </div>
+
+      <div class="col-md-8">
+
+      <!-- Font section -->
+        <div id="buttons">
+          <h4>Grids</h4>
+          <p>An introduction to the grid system we use at foodpanda.</p>
+          <p>Note: As we want to make our site friendlier for mobile users, and the current grid system hasn't been changed for a while, this page might change a lot in the near future.</p>
+          <hr>
+        </div>
+
+        <div id="fontsizes">
+          <h4 class="f-heading">Container size</h4>
+          <p>Our main container is fluid and adjusts to the viewport up until a viewport size of 768 px or bigger. After that it's fixed and changes on set media-queries. Within the container there is a standard grid system with 12 columns. </p>
+          <hr>
+          <div class="row" style="margin-top:40px">
+            <div class="col-sm-3">
+              <div class="row">
+                <div class="col-sm-12"><h4>@Media-query</h4></div>
+                <div class="col-sm-12"><p>Up to 768 px</p></div>
+                <div class="col-sm-12"><p>768 - 991 px</p></div>
+                <div class="col-sm-12"><p>992 - 1199 px</p></div>
+                <div class="col-sm-12"><p>More than 1199 px</p></div>
+              </div>
+            </div>
+
+            <div class="col-sm-9">
+              <div class="row">
+                <div class="col-sm-12"><h4>Container size</h4></div>
+                <div class="col-sm-4 col-sm-offset-4" style="background-color:#DADEE1;"><p>100%</p></div>
+                <div class="col-sm-8 col-sm-offset-2" style="background-color:#FAFAFA;"><p>740 px</p></div>
+                <div class="col-sm-10 col-sm-offset-1" style="background-color:#DADEE1;"><p>960 px</p></div>
+                <div class="col-sm-12" style="background-color:#FAFAFA;"><p>1160 px</p></div>
+              </div>
+            </div>
+          </div>
+
+          
+
+        </div>
+
+      <!-- Footer -->
+      <div class="col-md-12"><footer style="text-align:right;"><p><small>Version 0.1 of foodpanda Design System.</small></p></footer></div>
+
+  </div> <!-- Close main div -->
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
