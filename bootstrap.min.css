@@ -10,6 +10,10 @@ body{
 	font-family: 'Open Sans', sans-serif;
 }
 
+h4{
+	font-weight:700;
+}
+
 .crect{
 	width:100%;
 	height:80px;
@@ -267,4 +271,16 @@ span#btn-tertiary-delete-disabled{
 .row .row p {
 	margin-bottom:5px;
 	margin-top:5px;
+}
+
+#font-sizes .row{
+	margin-bottom:10px;
+}
+
+p.focus{
+	color:#0C1319;
+}
+
+p{
+	color:#676F75;
 }
