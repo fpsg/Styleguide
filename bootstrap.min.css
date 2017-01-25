@@ -8,6 +8,7 @@
 body{
 	margin-top:100px;
 	font-family: 'Open Sans', sans-serif;
+	line-height:1.6em;
 }
 
 h4{
@@ -16,12 +17,45 @@ h4{
 
 .crect{
 	width:100%;
-	height:80px;
+	height:60px;
 }
 
 ul.side-nav{
-	list-style-type: none;
+	position:fixed;
+	top:60px;
 }
+
+ul.side-nav, ul{
+	list-style-type: none;
+	padding-left:0;
+	-webkit-padding-start: 0;
+	line-height:1.6em;
+}
+
+ul.side-nav p{
+	margin-left:0;
+	margin-top:10px;
+	margin-bottom:0px;
+	color:#676F75;
+}
+
+ul.side-nav li a{
+	color:#20AC76;
+}
+
+ul.side-nav li a:hover{
+	text-decoration: none;
+	color:#0E4D35;
+}
+
+ul.side-nav li a:active{
+	color:#8FD5BA;
+}
+
+ul.sub-nav{
+	margin-left:20px;
+}
+
 .btn{
 	display:inline;
 	margin-right:10px;
