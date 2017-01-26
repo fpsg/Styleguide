@@ -11,6 +11,23 @@ body{
 	line-height:1.6em;
 }
 
+a{
+	color: #4CBC91;
+}
+
+a:hover{
+	color: #0E4D35;
+	text-decoration: none;	
+}
+
+a:active{
+	color: #8FD5BA;
+}
+
+a:disabled{
+	color: #B3B9BD;
+}
+
 h4{
 	font-weight:700;
 }
@@ -326,6 +343,31 @@ p.focus{
 
 p{
 	color:#676F75;
+}
+
+p::selection {
+  background: #20ac76; /* WebKit/Blink Browsers */
+  color:#fff;
+}
+
+h1::selection {
+  background: #20ac76; /* WebKit/Blink Browsers */
+  color:#fff;
+}
+
+h2::selection {
+  background: #20ac76; /* WebKit/Blink Browsers */
+  color:#fff;
+}
+
+h3::selection {
+  background: #20ac76; /* WebKit/Blink Browsers */
+  color:#fff;
+}
+
+h4::selection {
+  background: #20ac76; /* WebKit/Blink Browsers */
+  color:#fff;
 }
 
 /* Media query for small devices */
