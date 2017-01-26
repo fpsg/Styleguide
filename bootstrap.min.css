@@ -39,6 +39,10 @@ ul.side-nav p{
 	color:#676F75;
 }
 
+ul.sidenav li{
+	color:#B3B9BD;
+}
+
 ul.side-nav li a{
 	color:#20AC76;
 }
@@ -53,6 +57,7 @@ ul.side-nav li a:active{
 }
 
 ul.sub-nav{
+	color:#B3B9BD;
 	margin-left:20px;
 }
 
@@ -221,7 +226,7 @@ span#btn-tertiary-active{
 
 span#btn-tertiary-disabled{
 	background-color: #fff;
-	color: #959A9E;
+	color: #B3B9BD;
 	border: none;
 }
 
@@ -321,4 +326,18 @@ p.focus{
 
 p{
 	color:#676F75;
+}
+
+/* Media query for small devices */
+
+@media screen and (max-width: 768px ) {
+	
+	ul.side-nav{
+		position:relative;
+		top:-20px;
+	}
+	
+	ul.sub-nav li.dis {
+		display:none;
+	}
 }
